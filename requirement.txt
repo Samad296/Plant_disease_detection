@@ -3,4 +3,3 @@ tensorflow==2.19.0
 numpy
 pillow
 opencv-python-headless
-pandas
