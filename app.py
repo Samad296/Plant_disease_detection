@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+from tensorflow.keras.models import model_from_json
 from tensorflow.keras.applications.efficientnet import preprocess_input
 # ── Page Config ───────────────────────────────────────────
 st.set_page_config(
@@ -12,8 +13,17 @@ st.set_page_config(
 # ── Load Model ───────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('plant_disease_model.keras', compile=False)
+    # 1. Load the architecture (blueprint)
+    with open('model_architecture.json', 'r') as json_file:
+        model_json = json_file.read()
+    model = model_from_json(model_json)
+    
+    # 2. Load the weights (data) into the architecture
+    model.load_weights('plant_disease_model.weights.h5')
+    
     return model
+
+# Initialize the model
 model = load_model()
 @st.cache_resource
 def load_labels():
