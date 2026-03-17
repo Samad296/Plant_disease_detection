@@ -242,9 +242,9 @@ This project is licensed under the **MIT License** — free to use and modify.
 
 ## 👨‍💻 Author
 
-**Muhammad Samad**
+**Abdul Samad Imtiaz**
 - 🐙 GitHub: [@Samad296](https://github.com/Samad296)
-- 🤗 Hugging Face: [YOUR_HF_PROFILE](https://huggingface.co/sam-imt296)
+- 🤗 Hugging Face: [@sam-imt296](https://huggingface.co/sam-imt296)
 
 ---
 
