@@ -9,7 +9,7 @@
 
 ## 🌐 Live Demo
 👉 [Try the App on Hugging Face Spaces](https://huggingface.co/spaces/sam-imt296/farm_disease)
-👉 [GitHub Repository](https://github.com/Samad296/Plant_disease_detection)
+👉 [Streamlit Deploy](https://plantdiseasedetection-38.streamlit.app/)
 
 ---
 
