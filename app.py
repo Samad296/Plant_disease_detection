@@ -13,13 +13,7 @@ st.set_page_config(
 # ── Load Model ───────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    # 1. Load the architecture (blueprint)
-    with open('model_architecture.json', 'r') as json_file:
-        model_json = json_file.read()
-    model = model_from_json(model_json)
-    
-    # 2. Load the weights (data) into the architecture
-    model.load_weights('plant_disease_model.weights.h5')
+    model = tf.keras.models.load_model('plant_disease.keras')
     
     return model
 
